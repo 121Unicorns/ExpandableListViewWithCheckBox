@@ -1,4 +1,4 @@
-package com.handyhelper.expandablelistview;
+package com.expandablelistview;
 
 import java.util.ArrayList;
 
