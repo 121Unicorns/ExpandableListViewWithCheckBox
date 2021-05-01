@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ExpandableListView</string>
+    <string name="str_fruits">Fruits</string>
+    <string name="str_pets">Pets</string>
+    <string-array name="fruits_array">
+        <item>Mango</item>
+        <item>Pineapple</item>
+        <item>Watermelon</item>
+        <item>Orange</item>
+        <item>Kiwi</item>
+    </string-array>
+    <string-array name="pets_array">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Goldfish</item>
+    </string-array>
+</resources>
