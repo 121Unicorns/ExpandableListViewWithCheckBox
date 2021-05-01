@@ -1,4 +1,4 @@
-package com.handyhelper.expandablelistview;
+package com.expandablelistview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
