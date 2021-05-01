@@ -1,4 +1,4 @@
-package com.handyhelper.expandablelistview;
+package com.expandablelistview;
 
 import android.content.Context;
 import android.util.Log;
