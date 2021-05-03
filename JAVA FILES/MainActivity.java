@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity implements ListedListener{
         listAdapter.setmListener(this);
         expandList.setAdapter(listAdapter);
 
+        expandList.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+            @Override
+            public void onGroupCollapse(int groupPosition) {
+                System.out.println(expandList.getCheckedItemIds().toString());
+            }
+        });
 
         BtnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,11 +60,11 @@ public class MainActivity extends AppCompatActivity implements ListedListener{
         listDataHeader.add(getResources().getString(R.string.str_pets));
         listDataHeader.add(getResources().getString(R.string.str_fruits));
 
-        List<String> petsList = Arrays.asList(getResources().getStringArray(R.array.pets_array));
-        List<String> fruitsList  = Arrays.asList(getResources().getStringArray(R.array.fruits_array));
+        List<String> painList = Arrays.asList(getResources().getStringArray(R.array.pets_array));
+        List<String> collectList  = Arrays.asList(getResources().getStringArray(R.array.fruits_array));
 
-        listDataChild.put(listDataHeader.get(0), petsList);
-        listDataChild.put(listDataHeader.get(1), fruitsList);
+        listDataChild.put(listDataHeader.get(0), painList);
+        listDataChild.put(listDataHeader.get(1), collectList);
     }
 
     @Override
